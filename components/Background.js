@@ -1,10 +1,10 @@
 import React from "react";
 
-const BackgroundImage = ({ children, image }) => {
+const Background = ({ children, image, gradient }) => {
   return (
     <div
       style={{
-        backgroundImage: `url("${image}")`,
+        backgroundImage: gradient ? gradient : `url("${image}")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         display: "flex",
@@ -19,4 +19,4 @@ const BackgroundImage = ({ children, image }) => {
   );
 };
 
-export default BackgroundImage;
+export default Background;

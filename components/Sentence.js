@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sentence = ({ children, color }) => {
+const Sentence = ({ children, textColor }) => {
   return (
     <h1
       style={{
@@ -8,7 +8,7 @@ const Sentence = ({ children, color }) => {
         lineHeight: "1.25",
         marginBottom: "0",
         marginTop: "0",
-        color: color ? color : "black"
+        color: textColor ? textColor : "black"
       }}
     >
       {children}

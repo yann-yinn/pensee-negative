@@ -1,12 +1,12 @@
 import React from "react";
-import BackgroundImage from "./BackgroundImage";
+import Background from "./Background";
 import Sentence from "./Sentence";
 
-const PenseeNegative = ({ url, children, color }) => {
+const PenseeNegative = ({ image, children, textColor, gradient }) => {
   return (
-    <BackgroundImage image="images/flowers.jpg">
-      <Sentence>{children}</Sentence>
-    </BackgroundImage>
+    <Background gradient={gradient} image={image}>
+      <Sentence textColor={textColor}>{children}</Sentence>
+    </Background>
   );
 };
 
