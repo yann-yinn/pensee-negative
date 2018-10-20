@@ -1,10 +1,10 @@
 {
-  "name": "on-ne-nait-pas-perdant-on-le-devient",
+  "name": "pensee-negative",
   "version": "1.0.0",
-  "description": "",
+  "description": "Une pensée négative par jour.",
   "main": "index.js",
   "scripts": {
-      "start": "mdx-deck deck.mdx"
+    "start": "mdx-deck deck.mdx"
   },
   "author": "",
   "license": "ISC",
