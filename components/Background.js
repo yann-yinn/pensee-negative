@@ -1,10 +1,17 @@
 import React from "react";
 
-const Background = ({ children, image, gradient }) => {
+const Background = ({ children, image = null, gradient = null }) => {
+  let backgroundImage = "white";
+  if (image) {
+    backgroundImage = image;
+  }
+  if (gradient) {
+    backgroundImage = gradient;
+  }
   return (
     <div
       style={{
-        backgroundImage: gradient ? gradient : `url("${image}")`,
+        backgroundImage,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         display: "flex",
