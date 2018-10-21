@@ -4,7 +4,9 @@
   "description": "Une pensée négative par jour.",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.mdx"
+    "start": "PORT=80 mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "deploy": "npm run build && now dist -n pensee-negative"
   },
   "author": "",
   "license": "ISC",
