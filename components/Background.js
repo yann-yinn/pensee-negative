@@ -3,7 +3,7 @@ import React from "react";
 const Background = ({ children, image = null, gradient = null }) => {
   let backgroundImage = "white";
   if (image) {
-    backgroundImage = image;
+    backgroundImage = `url(${image})`;
   }
   if (gradient) {
     backgroundImage = gradient;
